@@ -1,3 +1,4 @@
+// Implementation Layer
 interface MediaPlayerImplementation{
     playAudio(): void;
     playVideo(): void;
@@ -21,7 +22,7 @@ class MacMediaPlayer implements MediaPlayerImplementation {
     }
 }
 
-// Bridge Pattern
+// Abstraction Layer
 abstract class MediaPlayerAbstraction{
     constructor(protected implementation: MediaPlayerImplementation){}
 
