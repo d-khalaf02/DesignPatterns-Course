@@ -94,6 +94,7 @@ myFileSystem.undo()
 console.log('_________________________________')
 
 myFileSystem.addCommand(readFile);
+console.log(myFileSystem.hasCommands())
 myFileSystem.execute()
 myFileSystem.undo()
 
@@ -102,3 +103,4 @@ console.log('_________________________________\n\n')
 myFileSystem.addCommand(updateFile);
 myFileSystem.execute()
 myFileSystem.undo()
+
